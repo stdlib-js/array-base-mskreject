@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-base-mskreject",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Return a new array by applying a mask to a provided input array.",
   "license": "Apache-2.0",
   "author": {
