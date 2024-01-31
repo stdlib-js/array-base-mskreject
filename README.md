@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import mskreject from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-mskreject/tags). For example,
+
+```javascript
 import mskreject from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@v0.1.0-esm/index.mjs';
 ```
 
@@ -85,7 +90,7 @@ var y = mskreject( x, [ 0, 1, 0, 1 ] );
 
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@esm/index.mjs';
 import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-bernoulli@esm/index.mjs';
-import mskreject from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@v0.1.0-esm/index.mjs';
+import mskreject from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@esm/index.mjs';
 
 // Generate a linearly spaced array:
 var x = zeroTo( 20 );
