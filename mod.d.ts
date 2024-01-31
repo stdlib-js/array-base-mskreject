@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2024 The Stdlib Authors.
@@ -16,28 +16,28 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Collection } from '@stdlib/types/array';
 
 /**
-* Return a new array by applying a mask to a provided input array.
+* Returns a new array by applying a mask to a provided input array.
 *
-* @module @stdlib/array-base-mskreject
+* @param x - input array
+* @param mask - mask array
+* @returns output array
 *
 * @example
-* var mskreject = require( '@stdlib/array-base-mskreject' );
-*
 * var x = [ 1, 2, 3, 4 ];
-* var mask = [ 0, 1, 0, 1 ];
 *
-* var y = mskreject( x, mask );
+* var y = mskreject( x, [ 0, 1, 0, 1 ] );
 * // returns [ 1, 3 ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function mskreject<T = unknown>( x: Collection<T>, mask: Collection ): Array<T>;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = mskreject;
