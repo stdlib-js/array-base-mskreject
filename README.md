@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+mskreject = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-mskreject/tags). For example,
+
+```javascript
 mskreject = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@v0.2.0-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var mskreject = require( 'path/to/vendor/umd/array-base-mskreject/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -107,7 +112,7 @@ var y = mskreject( x, [ 0, 1, 0, 1 ] );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-bernoulli@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
