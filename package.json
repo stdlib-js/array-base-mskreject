@@ -42,7 +42,8 @@
     "@stdlib/array-base-resolve-getter": "^0.2.0",
     "@stdlib/strided-base-reinterpret-complex": "github:stdlib-js/strided-base-reinterpret-complex#main",
     "@stdlib/types": "^0.3.1",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.0"
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.0",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/array-base-to-accessor-array": "^0.2.0",
