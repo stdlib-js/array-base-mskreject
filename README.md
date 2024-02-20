@@ -33,7 +33,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Return a new array by applying a mask to a provided input array.
+> Apply a mask to a provided input array.
 
 <section class="installation">
 
@@ -74,6 +74,38 @@ var y = mskreject( x, [ 0, 1, 0, 1 ] );
 // returns [ 1, 3 ]
 ```
 
+The function supports the following parameters:
+
+-   **x**: input array.
+-   **mask**: mask array.
+
+The function **always** returns a new "generic" array.
+
+#### mskreject.assign( x, mask, out, stride, offset )
+
+Applies a mask to a provided input array and assigns unmasked values to elements in a provided output array.
+
+```javascript
+var x = [ 1, 2, 3, 4 ];
+var mask = [ 1, 0, 1, 0 ];
+
+var out = [ 0, 0, 0, 0 ];
+
+var arr = mskreject.assign( x, mask, out, -2, out.length-1 );
+// returns [ 0, 4, 0, 2 ]
+
+var bool = ( arr === out );
+// returns true
+```
+
+The function supports the following parameters:
+
+-   **x**: input array.
+-   **mask**: mask array.
+-   **out**: output array.
+-   **stride**: output array stride.
+-   **offset**: output array offset.
+
 </section>
 
 <!-- /.usage -->
@@ -82,7 +114,6 @@ var y = mskreject( x, [ 0, 1, 0, 1 ] );
 
 ## Notes
 
--   The function **always** returns a new "generic" array.
 -   If a `mask` array element is falsy, the corresponding element in `x` is **included** in the output array; otherwise, the corresponding element in `x` is "masked" and thus **excluded** from the output array.
 
 </section>
@@ -102,17 +133,16 @@ var mskreject = require( '@stdlib/array-base-mskreject' );
 
 // Generate a linearly spaced array:
 var x = zeroTo( 20 );
+console.log( x );
 
 // Generate a random mask:
 var mask = bernoulli( x.length, 0.5, {
     'dtype': 'generic'
 });
+console.log( mask );
 
 // Filter an array using the mask:
 var y = mskreject( x, mask );
-
-console.log( x );
-console.log( mask );
 console.log( y );
 ```
 
@@ -167,8 +197,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-base-mskreject.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-base-mskreject
 
-[test-image]: https://github.com/stdlib-js/array-base-mskreject/actions/workflows/test.yml/badge.svg?branch=v0.2.0
-[test-url]: https://github.com/stdlib-js/array-base-mskreject/actions/workflows/test.yml?query=branch:v0.2.0
+[test-image]: https://github.com/stdlib-js/array-base-mskreject/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/array-base-mskreject/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-base-mskreject/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-base-mskreject?branch=main
