@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.0">
 
-## Unreleased (2024-06-25)
+## 0.3.0 (2024-07-29)
 
 <section class="features">
 
@@ -56,7 +56,6 @@ A total of 2 people contributed to this release. Thank you to the following cont
 ### Features
 
 -   [`aaea47b`](https://github.com/stdlib-js/stdlib/commit/aaea47bb095cd9d2da2badc6ba7ad250b7949434) - add `assign` method
--   [`e7e8166`](https://github.com/stdlib-js/stdlib/commit/e7e8166f066e7f2c035c31c92bf97ecfd2386b83) - add `array/base/mskreject`
 
 </section>
 
@@ -69,6 +68,59 @@ A total of 2 people contributed to this release. Thank you to the following cont
 <details>
 
 -   [`aaea47b`](https://github.com/stdlib-js/stdlib/commit/aaea47bb095cd9d2da2badc6ba7ad250b7949434) - **feat:** add `assign` method _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.2.0">
+
+## 0.2.0 (2024-02-14)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.0">
+
+## 0.1.0 (2024-01-31)
+
+<section class="features">
+
+### Features
+
+-   [`e7e8166`](https://github.com/stdlib-js/stdlib/commit/e7e8166f066e7f2c035c31c92bf97ecfd2386b83) - add `array/base/mskreject`
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
 -   [`e7e8166`](https://github.com/stdlib-js/stdlib/commit/e7e8166f066e7f2c035c31c92bf97ecfd2386b83) - **feat:** add `array/base/mskreject` _(by Athan Reines)_
 
 </details>
