@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import mskreject from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-mskreject/tags). For example,
+
+```javascript
 import mskreject from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@v0.3.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@v0.3.0-deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@deno/mod.js';
 ```
 
 #### mskreject( x, mask )
@@ -117,7 +122,7 @@ The function supports the following parameters:
 ```javascript
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@deno/mod.js';
 import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-bernoulli@deno/mod.js';
-import mskreject from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@v0.3.0-deno/mod.js';
+import mskreject from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-mskreject@deno/mod.js';
 
 // Generate a linearly spaced array:
 var x = zeroTo( 20 );
