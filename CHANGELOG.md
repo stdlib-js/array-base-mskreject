@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-03)
+## Unreleased (2025-05-19)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`b6b1bb1`](https://github.com/stdlib-js/stdlib/commit/b6b1bb1cac8664502e870976f41dc3d1143e229c) - **refactor:** update import paths _(by Athan Reines)_
 -   [`19c85a5`](https://github.com/stdlib-js/stdlib/commit/19c85a5814ca72d9ef97e5a86a29c771bac407c9) - **docs:** fix comment _(by Athan Reines)_
 
 </details>
